@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS handyman_db;
+
+USE handyman_db;
+
+CREATE TABLE IF NOT EXISTS handymen (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    specialization VARCHAR(255) NOT NULL
+);
