@@ -9,10 +9,12 @@ public class HandymanService {
 
     private final Connection connection;
 
+    // Конструктор, який приймає Connection як параметр
     public HandymanService(Connection connection) {
         this.connection = connection;
     }
 
+    // Методи для роботи з базою даних
     public void addHandyman(Handyman handyman) {
         String query = "INSERT INTO handymen (name, specialization) VALUES (?, ?)";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
@@ -83,5 +85,3 @@ public class HandymanService {
         return handymen;
     }
 }
-
-

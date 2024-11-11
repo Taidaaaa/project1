@@ -15,6 +15,7 @@ public class MainMenu {
         this.handymanService = new HandymanService(connection);
     }
 
+
     public void displayMenu() {
         while (true) {
             System.out.println("\n--- Майстер на годину ---");
