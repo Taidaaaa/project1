@@ -12,6 +12,22 @@
     </properties>
 
     <dependencies>
+
+        <!-- Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.6.3.Final</version> <!-- Використовуйте актуальну версію -->
+        </dependency>
+
+        <!-- Додати Spring Context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.23</version> <!-- або остання доступна версія -->
+        </dependency>
+
+
         <!-- MySQL JDBC Driver -->
         <dependency>
             <groupId>mysql</groupId>
@@ -25,6 +41,9 @@
             <artifactId>spring-jdbc</artifactId>
             <version>5.3.9</version>
         </dependency>
+
+
+
     </dependencies>
 
     <build>
@@ -41,5 +60,8 @@
             </plugin>
         </plugins>
     </build>
+
+
+
 </project>
 
