@@ -3,16 +3,18 @@ package menu;
 import model.Handyman;
 import service.HandymanService;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
 public class MainMenu {
     private final HandymanService handymanService;
     private final Scanner scanner = new Scanner(System.in);
+    private final Connection connection;
 
-    public MainMenu(Connection connection) {
-        this.handymanService = new HandymanService(connection);
+    // Конструктор, який приймає Connection та HandymanService як параметри
+    public MainMenu(Connection connection, HandymanService handymanService) {
+        this.connection = connection;
+        this.handymanService = handymanService;
     }
 
 
